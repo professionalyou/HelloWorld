@@ -1,0 +1,10 @@
+<h1>Hello from Rails, Polly!</h1>
+<p>It is now <%= 1.hour.from_now %> </p>
+<% @files=Dir.glob('*')%>
+<% for file in @files%>
+	<p> FILE NAME IS: <%= file%>
+<% end %>
+<p>
+	Time to say
+	<%= link_to "Goodbye", say_goodbye_path %>!
+	</p>
